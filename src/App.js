@@ -11,7 +11,7 @@ import axios from "axios";
 import reducer from "./reducers/reducer";
 import { AppContext } from "./context/context";
 
-const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a";
 
 function App() {
   const [state, dispatch] = useReducer(reducer, { search: "", loading: true });
