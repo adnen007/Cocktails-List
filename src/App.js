@@ -41,29 +41,4 @@ function App() {
 
 export default App;
 
-/*
-const baseURL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s";
-console.log(1);
-// this funtion is only temporary till i put the context
-let list;
-async function getData() {
-  console.log(2);
-  let response = await fetch(baseURL);
-  // this code will not work before response get resolved
-  list = await response.json();
-  // this code will not work list response get resolved
 
-  console.log(3);
-  console.log(list);
-  //so while the code after await wait till the promise get resolved the code outside the
-  // aysnc function will continue to execute and when the promise after the await get
-  // resolved the aysnc function will continue to execute but off course its execution
-  // context will move to the queue and wait its turn
-
-  // so yeah it just a syntax sugar to then it make sure that the code inside the async
-  // function get executed by an orderd but yeah while that the call stack will still get the
-  // next execution contexts and execute them.
-}
-
-getData();
-*/
